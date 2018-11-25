@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+   /*
+   function parztiv (parm){
+ var t ="parz"
+ var x = 2
+ while (x<=parm/2 && t=="parz"){
+    x++
+     if(parm%x==0){
+         t="voch parz"
+     }
+ }
+   return t
+   }
+    console.log(parztiv(18))
+*/
+function parztiv (parm){
+    var t = "parz" ;
+    for(x=2;x<=parm/2;x++ && t=="parz") {
+        if(parm%x==0){
+            t="voch parz"
+
+        }
+        else{
+            t="parz"
+        }
+ }
+ return t
+ }
+  console.log(parztiv(254))
+
+ 
+            
+   
+   
+   
+   </script> 
+</body>
+</html>
