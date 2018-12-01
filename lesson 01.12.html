@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+/*
+ var x = "he"    
+
+var obj = {
+    1:"hello",
+    2:"yes"
+};
+for ( var key in obj){
+ if(typeof(x)==typeof(key)){
+     alert("ham@nkav")
+ }
+}
+    */
+    var person = {
+    firstName: "John",
+    lastName : "Doe",
+    year       : 2018,
+    age: 29,
+    fullName : function() {
+        return this.firstName + " " + this.lastName;
+    }
+};/*
+person.tarberutyun = function () {
+    return this.year- this.age;
+};
+person.print = function(){
+    return "the person new name is"+this.firstName+" "+this.lastName
+}*/
+console.log(typeof (Object.values(person)));
+console.log(Object.keys(person));
+    
+    </script>
+</body>
+</html>
