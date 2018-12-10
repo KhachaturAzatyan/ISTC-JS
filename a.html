@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+  /*
+    var object1 = {
+  a: 1,
+  b: 2,
+  c: 3
+};
+
+var object2 = Object.assign({c:5, d: 8}, object1);
+
+console.log(object2.c, object2.d);
+*/
+/*
+var person = {
+  isHuman: false,
+  printIntroduction: function () {
+    console.log(`My name is ${this.name}. Am I human? ${this.isHuman}`);
+  }
+};
+
+
+var me = Object.create(person);
+
+me.name = "Matthew"; // "name" is a property set on "me", but not on "person"
+me.isHuman = true; // inherited properties can be overwritten
+
+me.printIntroduction();
+// expected output: "My name is Matthew. Am I human? true 
+    */
+
+    /* propertineri arkayutyan stugum
+    const object1 = new Object();
+object1.property1 = 42;
+
+console.log(object1.hasOwnProperty('property1'));
+// expected output: true
+
+console.log(object1.hasOwnProperty('toString'));
+// expected output: false
+
+console.log(object1.hasOwnProperty('hasOwnProperty'));
+// expected output: false
+    
+    */
+    function longWord(param) {
+         var str = param.split(" ");
+           for (var key in str) {
+                var maxWord = str[0];
+               if ( str[key].length > maxWord.length ) {                  
+                 
+                    maxWord = str[key] ;
+               }
+              
+           }
+           console.log(maxWord);
+        }
+        longWord("How are you doing today?");  
+
+    </script>
+</body>
+</html>
