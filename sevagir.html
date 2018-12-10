@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+    // Task 1
+       function arrnum(arr, num){
+           if (Array.isArray(arr) === true && typeof num === "number"){
+               arr.splice(num)
+               return arr
+           }
+           else return "First param should be array, second number"
+       };
+
+
+                                       // Task 2
+       arr = [7, 'a', 'a', 'a', 2, 7, 'a', 7, 'a', 2, 4, 9, 7];
+       newarr = [];
+       for (i = 0; i < arr.length; i++){
+           var a = -1;
+           for (j = 0; j < newarr.length; j++){
+               if (newarr[j] && newarr[j].number === arr[i]){
+                   a = j
+               };
+           };
+           if (a != -1){
+               newarr[a].count++;
+           }
+           else {
+               newarr.push({number: arr[i], count: 1});
+           };
+       };
+
+       console.log(newarr);
+
+
+                                       // Task 3
+       arrNum = [3, 2.3, 4.2, 6, 8, 2, 5];
+       arrInt = arrNum.filter(intFunc);
+       function intFunc(value){
+           return Number.isInteger(value) === true
+       };
+       var sumPlus = 0;
+       var sumMult = 1;
+       for (var i = 0; i < arrInt.length; i++) {
+           sumPlus += arrInt[i];
+           sumMult *= arrInt[i];
+       };
+       console.log(sumPlus)
+       console.log(sumMult)
+
+
+                                       // Task 4
+       newarray = [];
+       arruy = [5, 7, 4, 5, 7, 6, 8, 10, 7, 15, 10];
+       for (i = 0; i < arruy.length; i++){
+           if (newarray.indexOf(arruy[i]) === -1){
+               newarray.push(arruy[i]);
+           };
+       };
+       newarray.sort(function(a, b){return a - b});
+       console.log(newarray);
+
+
+                                       // Task 5
+       numarr =  [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+       numarr.sort(function(a, b){return 0.5 - Math.random()});
+       console.log(numarr)
+
+    
+    
+    
+    
+    </script>
+</body>
+</html>
