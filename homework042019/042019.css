@@ -1,0 +1,55 @@
+body,html{
+    width: 100%;
+height: 100%;
+}
+#pic{
+    display: flex;
+ background-image: url(photo.jpg);
+ height: 100%;
+ width: 100%;
+ background-position: center;
+ background-size: cover;
+
+
+}
+#overlay{
+    
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: .3;
+    background: linear-gradient(to right, #333399 0%, #00ff99 100%);
+  z-index: 1;
+     }
+#forms{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 70%;
+    margin: auto;
+    background-color:white;
+    border-radius: 2%;
+   z-index: 2;
+    
+}
+.input1{
+       margin: auto;
+       width: 60%;
+       height: 5%;
+}
+#sing{
+    text-align: center;
+    border: none;
+    font-size: 14px;
+    color: white;
+    opacity: .3;
+    margin: auto;
+    width: 60%;
+    height:6%;
+    border-radius: 10%;
+    background: linear-gradient(to right, #333399 0%, #00ff99 100%);
+}
+.label{
+    font-size: 12px;
+    padding: 30px;
+}
