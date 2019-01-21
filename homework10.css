@@ -1,0 +1,46 @@
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.perent{
+    width: 100%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+
+}
+ul{
+    display: flex
+}
+li{
+    display: inline;
+    margin: auto;
+    
+}
+button{
+    background-color: brown;
+    border: 1px;
+    width: 100px;
+    height: 50px;
+    border-radius: 5px
+}
+.first{
+    display: flex;
+   flex-direction: row;
+   align-self: auto;
+
+    
+   
+}
+.second{
+background-color: black
+}
+.third{
+    background-color: blue;
+    height: 15%;
+    width: 100%
+
+}
+.forth{
+
+}

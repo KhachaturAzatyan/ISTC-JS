@@ -9,24 +9,53 @@
 </head>
 <body>
     <div id="pic">
-         <div id="overlay">
-            
-             </div> 
+         <div id="overlay"> </div> 
              <div id="forms">
                     <h3 align="center" class="h3">CREATE ACCOUNT</h3>
-                    <input class="input1" type="text" placeholder="name">
-                    <input class="input1" type="text" placeholder="surname">
-                    <input class="input1" type="email" placeholder="Your email">
-                    <input class="input1" type="password" placeholder="password" >
-                    <input class="input1" type="password"placeholder="Repeat yor password">
-                    <label align="center" class="label"><input type="checkbox"> I agree all statements in<a href="#">Terms of service</a> </label>
-                   <button id="sing">SING UP</button>
+                    <input class="input1" id="name"     type="text" placeholder="name">
+                    <span class="span" id="spanname"></span>
+                    <input class="input1" id="surname"  type="text" placeholder="surname">
+                    <span class="span" id="spansurname"></span>
+                    <input class="input1" id="email"    type="email" placeholder="Your email">
+                    <span class="span" id="spanemail"></span>
+                    <input class="input1" id="password" type="password" placeholder="password" >
+                    <input class="input1" id="repassword" type="password"placeholder="Repeat yor password">
+                    <span class="span" id="spanre"></span>
+                    <label align="center" class="label"> <input type="checkbox"> I agree all statements in<a href="#">Terms of service</a> </label>
+                   <button id="sing" onclick="myfunction()">SING UP</button>
                    
                    <label align="center" class="label"> Have already an accont? <a href="#">Login Here</a> </label>
-    </div> 
-
-            </div>
-           
-    
+                       </div> 
+                   
+<div id="table">
+        <table>
+            <caption>YOUR VERIFY IS SUCCSESS </caption>
+         
+                    <tr class="tr">
+                    <th>Name:</th>
+                    <td id="aname"></td>
+                    </tr>
+                    <tr class="tr">
+                    <th >surname:</th>
+                    <td id="asurname"></td>
+                    </tr>
+                    <tr class="tr">
+                    <th >Your email:</th>
+                    <td id="aemail"></td>
+                    </tr>
+                    <tr class="tr">
+                    <th >password:</th>
+                    <td id="apassword"></td>
+                    </tr>
+                    <tr class="tr">
+                    <th >ID:</th>
+                    <td id="aid"></td>
+                    </tr>
+                  </table>
+              </table>
+</div>
+            
+</div>    
+    <script src="042019.js"></script>
 </body>
 </html>

@@ -1,0 +1,22 @@
+table{
+   color: aliceblue;
+    width: 100%;
+    background: linear-gradient(to right, #00cc66 0%, #00cc99 100%);
+    border-collapse: collapse;
+    border: 1px solid black;
+   
+}
+th{padding: 5%;
+    text-align: center
+
+}
+tr{text-align: left;
+    border-collapse: collapse;
+    border: 1px solid aliceblue;
+}
+td{text-align: left;
+    padding: 2%
+}
+aa{
+    color:black;
+}
