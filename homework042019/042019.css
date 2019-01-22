@@ -25,6 +25,7 @@ height: 100%;
     
     display: flex;
     flex-direction: column;
+    
     width: 30%;
     height: 70%;
     margin: auto;
@@ -41,6 +42,8 @@ height: 100%;
     }
 }
 .input1{
+     
+      border-radius: 2px;
        margin: auto;
        width: 60%;
        height: 5%;
@@ -74,12 +77,14 @@ height: 100%;
 
 }
 .tr{
-   background: #00ff99
+
 }
 .span{
-    display: inline;
+    font-size: 9px;
+    display: inline-block;
     width: 70%;
     color: red;
-  
+    margin-inline-start: 35%
+    
     
 }
