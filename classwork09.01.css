@@ -1,0 +1,49 @@
+body,html{
+    margin: 0 auto;
+    width:80%;
+    height: 100%;   
+}
+#all{
+    width: 100%;
+    height: 100%;
+}
+#black{
+    
+    
+    width: 100%;
+    height: 30%;
+    background-image: url("../ISTC-HTML/pics2/slide1.jpg");
+    background-size: 100%  150%;
+    background-repeat: no-repeat
+
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2%;
+    text-align: center;
+}
+.icon{
+   width: 30px;
+   height: 30px;
+   border-radius:50%;
+   background-color: white;
+   margin-right: 3px;
+   display: inline-block;
+
+}
+i{
+    padding-top: 6px;
+}
+#four{
+    display: flex;
+    margin: auto;
+    width: 70%;
+    height: 30;
+}
+#pics{
+    display: flex;
+    margin: auto;
+    width: 70%;
+    height: 40%;    
+}
