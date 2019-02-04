@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="Styles/StyleTest.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+<body id="body" onload="createButtons()" onresize="myFunction()">
+    <div class="main" id="popoq">
+        <div class="topNav">
+            <button class="navbut" onclick="navBar()"></button>
+            <ul class="hidden" id="myNav">
+                <li>HOME</li>
+                <li>SERVICES</li>
+                <li>PORTFOLIO</li>
+                <li>TEAM</li>
+                <li>CONTACT</li>
+            </ul>
+        </div>
+        <div class="icons">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-youtube"></i>
+            <i class="fab fa-instagram"></i>
+        </div>
+        <div class="flex" id="myFlex">
+            <div class="firstFlex"><h3>FLEX</h3></div>
+            <ul class="secondFlex">
+                <li>HOME</li>
+                <li>SERVICES</li>
+                <li>PORTFOLIO</li>
+                <li>TEAM</li>
+                <li>CONTACT</li>
+            </ul>
+        </div>
+        <div class="dig">
+            <h2 class="studio">DIGITAL STUDIO</h2>
+            <h4 class="design">LET US DESIGN YOUR WEBSITE</h4>
+            <button class="respoButton">RESPONSIVE TEMPLATE</button>
+        </div>
+    </div>
+    <div class="second">
+        <h4 class="services">OUR SERVICES</h4>
+        <p class="help">LET US HELP YOU TO CREATE PROFESSIONAL WEBSITES</p>
+        <div id="buttonsDiv">
+
+        </div>
+        <h4 class="services">OUR PORTFOLIO</h4>
+        <p class="help">WHAT WE HAVE DONE SO FAR</p>
+        <div id="picturesDiv1">
+
+        </div>
+        <div id="picturesDiv2">
+
+        </div>
+    </div>
+
+
+    <script>
+        let createButtons = () => {
+            let buttonsDiv = document.getElementById("buttonsDiv");
+            let picturesDivf = document.getElementById("picturesDiv1");
+            let picturesDivs = document.getElementById("picturesDiv2");
+            for (let i = 1; i < 5; i++) {
+                let createBut = document.createElement("BUTTON");
+                createBut.className = "button" + i;
+                buttonsDiv.appendChild(createBut);
+            };
+            for (let j = 1; j < 9; j++) {
+                let createDiv = document.createElement("DIV");
+                createDiv.className = "div" + j;
+                if (j < 5) {
+                    picturesDivf.appendChild(createDiv);
+                }
+                else picturesDivs.appendChild(createDiv);
+            };
+        };
+        let hidden = document.getElementById("myNav");
+        hidden.style.display = "none";
+        let navBar = () => {  
+            if (hidden.style.display == "none") {
+                hidden.style.display = "flex";
+            }
+            else hidden.style.display = "none";
+        };
+        function myFunction() {
+            if (document.getElementById("body").clientWidth > 672) {
+                hidden.style.display = "none"
+            };
+        };
+    </script>
+</body>
+</html>

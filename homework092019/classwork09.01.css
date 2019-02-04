@@ -1,0 +1,224 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: default;
+}
+body,html{
+    margin: 0 auto;
+    width:90%;
+    height: 100%; 
+      
+}
+#all{
+    width: 100%;
+    height: 100%;
+}
+#black{
+    
+    
+    width: 100%;
+    height: 29%;
+    background-image: url(slide1.jpg);
+    background-size: 100%  144%;
+    background-repeat: no-repeat
+
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2%;
+    text-align: center;
+    padding: 0
+}
+.icon:hover{
+    background-color: #ED5240;
+    color: white;
+}
+.icon{
+    
+   width: 30px;
+   height: 30px;
+   border-radius:50%;
+   background-color: white;
+   margin-right: 3px;
+   display: inline-block;
+
+}
+i{
+    padding-top: 6px;
+}
+
+.flex {
+    display: flex;
+    width: 70%;
+    height: 60px;
+    background-color: white;
+    margin: 1% auto;
+}
+
+.firstFlex{
+    box-sizing: border-box;
+    height: 100%;
+    width: 50%;
+    background-image: url(logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 0 0 0 65px;
+    color: #ED5240;
+}
+li {
+    margin: auto;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition-duration: 0.5s; 
+    padding: 22.3px 8px;
+}
+li:hover {
+    background-color: #ED5240;
+    color: white;
+}
+.secondFlex {
+    height: 100%;
+    width: 50%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 80%;
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+}
+.ds{
+    text-align: center
+}
+.dig{
+    font-size: 85%;
+    color: white;
+    text-decoration: underline;
+}
+.let{
+    font-size: 45%;
+    color: white
+}
+button{
+    font-size: 7px;
+    padding: 7px;
+    background-color: #ED5240;
+    color: white;
+    border: none;
+    border-radius: 4px
+}
+#four{
+    display: flex;
+    margin: auto;
+    width: 70%;
+    height: 70%;
+    flex-direction: column;
+}
+.services{
+    font-size: 84%;
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom:3px;
+    margin-top: 0px
+}
+.help{
+    text-align: center;
+    font-size: 49%;
+     margin: 0;
+     color: grey
+}
+#icon1, #icon2,#icon3,#icon4{
+    font-size: 300%
+} 
+#buttonsDiv{
+    align-self: center;
+}
+.button1, .button2, .button3, .button4 {
+    height: 140px;
+    width: 140px;
+    background-repeat: no-repeat;
+    background-size: 20%;
+    background-position: center;
+    border: none;
+    transition-duration: 0.4s;
+    margin: 8px
+}
+.button1 {
+    background-color: #1ABB99;
+  
+}
+.button2 {
+    background-color: #E67F22;
+    
+}
+.button3 {
+    background-color: #3497DA;
+    
+}
+.button4 {
+    background-color: #2DCC72;
+  
+}
+#picturesDiv1{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 78%;
+    align-self: center;
+}
+
+.div1, .div2, .div3, .div4, .div5, .div6, .div7, .div8 {
+    
+   
+    height: 140px;
+    width: 140px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    margin: 8px
+}
+.div1{
+    background-image: url(p1.jpg)
+}
+.div2{
+    background-image: url(p2.jpg)
+}
+.div3{
+    background-image: url(p3.jpg)
+}
+.div4{
+    background-image: url(p4.jpg)
+}
+.div5{
+    background-image: url(p5.jpg)
+}
+.div6{
+    background-image: url(p6.jpg)
+}
+.div7{
+    background-image: url(p7.jpg)
+}
+.div8{
+    background-image: url(p8.jpg)
+}
+.hidden{
+    display: none
+}
+.hidden {
+    height: 50%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    font-size: 200%;
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+}
