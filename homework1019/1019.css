@@ -1,0 +1,45 @@
+html,body{
+    width: 100%;
+    height: 100%;
+     margin: 0  
+}
+.all{
+   display: flex;
+   flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-image: url(penpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+}
+h2{
+    text-align: center
+}
+.butons{
+   width: 100%;
+   height: 20%;
+    margin: auto
+}
+.note{
+    margin: auto;
+    width: 100%;
+    height: 70%;
+}
+.mindiv{
+    display: flex;
+    margin: auto;
+    width: 50%;
+}
+.todo{
+    display: flex;
+    justify-content: space-evenly;
+}
+#cheakbox{
+    font-size: 15px;
+    color: green
+}
+#trashbin{
+    font-size: 15px;
+    color: grey   
+}
