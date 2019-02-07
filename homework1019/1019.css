@@ -17,29 +17,55 @@ h2{
     text-align: center
 }
 .butons{
-   width: 100%;
+   
    height: 20%;
     margin: auto
 }
 .note{
     margin: auto;
     width: 100%;
-    height: 70%;
+    height: auto;
+    padding: 0 25%;
+    box-sizing: border-box;
 }
 .mindiv{
     display: flex;
     margin: auto;
     width: 50%;
 }
-.todo{
+#pad>div{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 #cheakbox{
+   
     font-size: 15px;
-    color: green
+   
 }
 #trashbin{
     font-size: 15px;
     color: grey   
+}
+.divtext{
+    font: 400 100px/1.3 'Oleo Script', Helvetica, sans-serif;
+  
+  font-size: 15px
+}
+.note>div>i{
+    color: green
+}
+/* #pad>div>i{
+    color: green
+} */
+.green>i:nth-child(1){
+    color:green
+}
+.green>div{
+    color:green
+}
+.red>i:nth-child(1){
+    color:red
+}
+.red>div{
+    color:red
 }
