@@ -1,9 +1,7 @@
-
 function addtext(){
     let addArr = [];
     let text = document.getElementById("text").value;
     addArr.unshift(text)
-
 if(text){
    for (let i = 0; i < addArr.length; i++){
        let mindiv = document.createElement("div");
@@ -25,25 +23,19 @@ if(text){
        mindiv.appendChild(textdiv);
        mindiv.appendChild(itrash);
        note.appendChild(mindiv)
-
-    
-   } 
+     } 
 }
 else {alert("PLEASE ENTER TEXT")}}
-
 function changeColor(){
     if(this.parentElement.className=="green"){this.parentElement.className="red"}
-    else{this.parentElement.className="green"}
-   
+    else{this.parentElement.className="green"} 
   console.log(this.parentElement.className)
 };
-function delet (e) {
-    
+function delet (e) { 
 e.target.parentElement.remove(); 
 };
 function factive(){
     let acitve =document.getElementById("pad").getElementsByTagName("div");
-
     for(let i=0;i<acitve.length;i++){
         if(acitve[i].className=="red"){
             acitve[i].style.display="none"
@@ -53,7 +45,6 @@ function factive(){
 }
 function fshowc(){
     let comp =document.getElementById("pad").getElementsByTagName("div");
-
     for(let i=0;i<comp.length;i++){
         if(comp[i].className=="green"){
             comp[i].style.display="none"
@@ -63,7 +54,6 @@ function fshowc(){
 }
 function fshowa(){
     let all =document.getElementById("pad").getElementsByTagName("div");
-
     for(let i=0;i<all.length;i++){
             all[i].style.display="flex"
     }

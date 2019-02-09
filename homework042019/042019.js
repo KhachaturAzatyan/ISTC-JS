@@ -43,7 +43,7 @@ fetch('http://rest.learncode.academy/api/learncode/friends', {
     body: JSON.stringify(obj),
   })
   .then(answer => answer.json()) 
-  .then((answer) => {
+  .then(answer => {
     document.getElementById("aname").innerText = answer.name;
     document.getElementById("asurname").innerText = answer.surname;
     document.getElementById("aemail").innerText = answer.email;
@@ -51,6 +51,8 @@ fetch('http://rest.learncode.academy/api/learncode/friends', {
     document.getElementById("aid").innerText = answer.id;
     document.getElementById("forms").style.display = "none";
     document.getElementById("table").style.display = "table";
-  })}
+  })
+.catch(error => console.log(error))
+}
 
   }
